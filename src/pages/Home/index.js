@@ -6,8 +6,11 @@ import { counterActions } from "../../bus/counter/actions";
 
 
 const Home = props => (
-  <div>
-    <h1>Home</h1>
+  <>
+
+    {/* Content Header (Page header) */}
+
+    <h4>Home Page</h4>
     <p>Count: {props.count}</p>
 
     <button onClick={props.increment}>Increment</button>
@@ -15,7 +18,7 @@ const Home = props => (
     <button onClick={props.decrement}>Decrementing</button>
 
     <button onClick={() => props.changePage()}>Go to about page via redux</button>
-  </div>
+  </>
 );
 
 const mapStateToProps = ({ counter }) => ({

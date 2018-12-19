@@ -1,26 +1,22 @@
 import React, {Component} from "react";
 import { Route, Link } from "react-router-dom";
+import Header from './components/Header/index';
 import Home from "./pages/Home/index";
 import About from "./pages/About/index";
-import logo from './assets/img/logo.svg';
-
-import './App.css';
+import Page from "./components/Page";
 
 class App extends Component {
+
+
   render() {
     return (
-      <div>
-        <img src={logo} className="App-logo" alt="logo"/>
+      <div className="wrapper">
 
-        <header>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-        </header>
 
-        <main>
-          <Route exact path="/" component={Home}/>
-          <Route exact path="/about" component={About}/>
-        </main>
+        <Header />
+        <Page />
+
+
       </div>
     )
   }
