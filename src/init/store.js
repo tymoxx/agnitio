@@ -6,7 +6,12 @@ import rootReducer from './rootReducer'
 
 export const history = createHistory();
 
-const initialState = {};
+// const initialUser = { name: '' };
+
+const initialState = {
+  // authenticated: true,
+  // user: initialUser
+};
 const enhancers = [];
 const middleware = [
     // thunk,

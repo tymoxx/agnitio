@@ -24,15 +24,6 @@ export default (state = initialState, action) => {
         isDecrementing: !state.isDecrementing
       };
 
-    // case types.SET_ONLINE_STATUS:
-    //   return state.set('online', action.payload);
-    //
-    // case types.SET_AUTH_FETCHING_STATE:
-    //   return state.set('authFetching', action.payload);
-    //
-    // case types.SET_FEED_FETCHING_STATE:
-    //   return state.set('feedFetching', action.payload);
-
     default:
       return state;
   }

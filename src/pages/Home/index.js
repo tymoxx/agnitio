@@ -7,9 +7,6 @@ import { counterActions } from "../../bus/counter/actions";
 
 const Home = props => (
   <>
-
-    {/* Content Header (Page header) */}
-
     <h4>Home Page</h4>
     <p>Count: {props.count}</p>
 
