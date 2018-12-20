@@ -1,0 +1,10 @@
+.r-login-page {
+    height: 100%;
+    width: 100%;
+
+    background-image: url("../../assets/img/login-background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+}

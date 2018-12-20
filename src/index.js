@@ -16,11 +16,13 @@ import "./assets/css/font-awesome.css";
 
 const target = document.querySelector('#root');
 
+const state = store.getState();
+
 render(
     <Provider store={store}>
         <ConnectedRouter history={history}>
             <div>
-                <App />
+                <App authenticated = { state.authActions.authenticated }/>
             </div>
         </ConnectedRouter>
     </Provider>,

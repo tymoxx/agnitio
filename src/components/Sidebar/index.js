@@ -47,7 +47,6 @@ class Sidebar extends Component {
                 <i className="fa fa-link"/> <span>About</span>
               </Link>
             </li>
-
           </ul>
           {/* /.sidebar-menu */}
         </section>
