@@ -25,10 +25,10 @@ body {
 }
 /* Layout */
 .wrapper {
-  height: 100%;
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+  height: 100vh;
 }
 .wrapper:before,
 .wrapper:after {
