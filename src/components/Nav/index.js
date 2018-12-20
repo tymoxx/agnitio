@@ -15,25 +15,19 @@ class Nav extends Component {
             <span className="sr-only">Toggle navigation</span>
           </a>
 
-          { /* Navbar Right Menu */}
           <div className="navbar-custom-menu">
             <ul className="nav navbar-nav">
-              { /* User Account Menu */}
               <li className="dropdown user user-menu">
-                { /* Menu Toggle Button */}
                 <a href="#" className="dropdown-toggle" data-toggle="dropdown">
-                  { /* The user image in the navbar*/}
                   <img src={user2} className="user-image" alt="User Image"/>
-                  { /* hidden-xs hides the username on small devices so only the image appears. */}
-                  <span className="hidden-xs">Alexander Pierce</span>
+                  <span className="hidden-xs">{this.props.first_name} {this.props.last_name}</span>
                 </a>
                 <ul className="dropdown-menu">
-                  { /* The user image in the menu */}
                   <li className="user-header">
                     <img src={user2} className="img-circle" alt="User Image"/>
 
                     <p>
-                      Alexander Pierce - Web Developer
+                      {this.props.first_name} {this.props.last_name} - Web Developer
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>

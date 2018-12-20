@@ -10,9 +10,9 @@ const Home = props => (
     <h4>Home Page</h4>
     <p>Count: {props.count}</p>
 
-    <button onClick={props.increment}>Increment++</button>
+    <button onClick={props.increment}>Increment</button>
 
-    <button onClick={props.decrement}>Decrementing--</button>
+    <button onClick={props.decrement}>Decrementing</button>
 
     <button onClick={() => props.changePage()}>Go to about page via redux</button>
   </>
@@ -21,7 +21,7 @@ const Home = props => (
 const mapStateToProps = ({ counter }) => ({
   count: counter.count,
   isIncrementing: counter.isIncrementing,
-  isDecrementing: counter.isDecrementing
+  isDecrementing: counter.isDecrementing,
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({

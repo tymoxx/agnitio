@@ -12,7 +12,10 @@ class Header extends Component {
           { /* logo for regular state and mobile devices */}
           <span className="logo-lg"><b>Admin</b>LTE</span>
         </Link>
-        <Nav/>
+        <Nav
+          first_name = { this.props.first_name }
+          last_name = { this.props.last_name }
+        />
       </header>
     );
   }

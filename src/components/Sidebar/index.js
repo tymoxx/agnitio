@@ -20,7 +20,7 @@ class Sidebar extends Component {
               <img src={user2} className="img-circle" alt="User Image"/>
             </div>
             <div className="pull-left info">
-              <p>Alexander Pierce</p>
+              <p>{this.props.first_name} {this.props.last_name}</p>
               {/* Status */}
               <a href="#"><i className="fa fa-circle text-success"/> Online</a>
             </div>

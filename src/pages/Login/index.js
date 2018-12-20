@@ -21,11 +21,11 @@ class Login extends Component {
             <p className="login-box-msg">Sign in to start your session</p>
             <form>
               <div className="form-group has-feedback">
-                <input type="email" className="form-control" placeholder="Email"/>
+                <input type="email" className="form-control" placeholder="Email" disabled/>
                 <span className="glyphicon glyphicon-envelope form-control-feedback"/>
               </div>
               <div className="form-group has-feedback">
-                <input type="password" className="form-control" placeholder="Password"/>
+                <input type="password" className="form-control" placeholder="Password" disabled/>
                 <span className="glyphicon glyphicon-lock form-control-feedback"/>
               </div>
               <div className="form-group has-feedback">
@@ -41,7 +41,7 @@ class Login extends Component {
                 <div className="col-xs-4">
                   <div className="checkbox icheck">
                     <label>
-                      <input type="checkbox"/>Remember
+                      <input type="checkbox" disabled/>Remember
                     </label>
                   </div>
                 </div>
