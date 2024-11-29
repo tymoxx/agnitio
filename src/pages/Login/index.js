@@ -9,14 +9,17 @@ import "./styles.css";
 
 
 class Login extends Component {
+  
   render() {
+
     return (
       <div className="r-login-page">
-
         <div className="login-box">
+
           <div className="login-logo">
             <img className="rainmaker-logo" src={rainmakerLogo} alt=""/>
           </div>
+
           <div className="login-box-body">
             <p className="login-box-msg">Sign in to start your session</p>
             <form>
@@ -24,10 +27,12 @@ class Login extends Component {
                 <input type="email" className="form-control" placeholder="Email" disabled/>
                 <span className="glyphicon glyphicon-envelope form-control-feedback"/>
               </div>
+
               <div className="form-group has-feedback">
                 <input type="password" className="form-control" placeholder="Password" disabled/>
                 <span className="glyphicon glyphicon-lock form-control-feedback"/>
               </div>
+
               <div className="form-group has-feedback">
                 <div type="submit" className="btn btn-primary btn-block btn-flat" onClick={this.props.login}>Log In</div>
               </div>
@@ -38,6 +43,7 @@ class Login extends Component {
                     <span>Reset password</span>
                   </div>
                 </div>
+
                 <div className="col-xs-4">
                   <div className="checkbox icheck">
                     <label>

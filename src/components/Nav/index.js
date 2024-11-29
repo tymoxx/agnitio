@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 // import "../../assets/fonts/glyphicons-halflings-regular.eot";
 
 class Nav extends Component {
+
+
+
   render() {
+
+
     return (
       <div>
         <nav className="navbar navbar-static-top" role="navigation">
@@ -47,6 +52,8 @@ class Nav extends Component {
                     </div>
                     { /* /.row */}
                   </li>
+
+
 
                   { /* Menu Footer*/}
                   <li className="user-footer">
